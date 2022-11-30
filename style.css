@@ -1,0 +1,31 @@
+@import "normalize.css";
+@import "start.css";
+@import "header.css";
+@import "main.css";
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
+html {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.container {
+    max-width: 1770px;
+    padding: 30px 70px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        padding: 30px 42px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px 20px;
+    }
+}
