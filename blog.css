@@ -1,0 +1,228 @@
+@import "normalize.css";
+@import "start.css";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Lato:wght@300&display=swap');
+
+button {
+    border: none;
+}
+
+p {
+    width: 400px;
+    padding: 10px;
+    font-family: Lato;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.li {
+    display: flex;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 50px 100px;
+}
+
+.ul {
+    display: grid;
+    grid-template-columns: repeat(2, 570px);
+    grid-template-rows:repeat(5, 160px) ;
+    gap: 20px;
+}
+
+.img {
+    width: 160px;
+    height: 160px;
+}
+
+.one {
+    background: url(picture/boots.png);
+    background-size: cover;
+}
+
+.two {
+    background: url(picture/mountains.png);
+        background-size: cover;
+}
+
+.three {
+    background: url(picture/fox.png);
+        background-size: cover;
+}
+
+.four {
+    background: url(picture/laptop.png);
+        background-size: cover;
+}
+
+.five {
+    background: url(picture/orange.png);
+        background-size: cover;
+}
+
+.six {
+    background: url(picture/digital.png);
+        background-size: cover;
+}
+
+.seven {
+    background: url(picture/laptop-phone.png);
+        background-size: cover;
+}
+
+.eight {
+    background: url(picture/aloe.png);
+        background-size: cover;
+}
+
+.nine {
+    background: url(picture/plant.png);
+        background-size: cover;
+}
+
+.ten {
+    background: url(picture/apartament.png);
+        background-size: cover;
+}
+
+.eleven {
+    background: url(picture/boots.png);
+        background-size: cover;
+}
+
+.twelve {
+    background: url(picture/threads.png);
+        background-size: cover;
+}
+
+.page {
+    margin: 0 2px;
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    border: 1px solid #2D2D2D;
+    font-weight: 700;
+    border-radius: 4px;
+    padding: 1px 7px;
+}
+
+.button-left {
+    width: 28px;
+    background: url(picture/arrow-left.png) center no-repeat;
+    margin: 0 7px;
+    background-color: inherit;
+    border: none;
+}
+
+.button-right {
+    width: 28px;
+    background: url(picture/arrow-right.png) center no-repeat;
+    margin: 0 7px;
+    background-color: inherit;
+    border: none;
+}
+
+@media (max-width: 1320px) {
+    .ul {
+        grid-template-columns: repeat(2, 350px);
+        grid-template-rows:repeat(5, 100px) ;
+        gap: 20px;
+    }
+    .img {
+        background-size: cover;
+        width: 100px;
+        height: 100px;
+    }
+    p {
+        width: 250px;
+        padding: 8px;
+        font-size: 25px;
+        line-height: 30px;
+    
+    }
+    
+    .container {
+        display: flex;
+        justify-content: center;
+        margin: 50px 100px;
+    }
+}
+
+@media (max-width: 750px) {
+    .ul {
+        grid-template-columns: repeat(2, 260px);
+        grid-template-rows:repeat(5, 80px) ;
+        gap: 5px;
+    }
+    .img {
+        width: 80px;
+        height: 80px;
+    }
+    p {
+        width: 180px;
+        font-size: 18px;
+        line-height: 15px;
+    
+    }
+    
+    .container {
+        margin: 20px 10px;
+    }
+}
+
+@media (max-width: 580px) {
+    .ul {
+        grid-template-columns: repeat(1, 460px);
+        grid-template-rows:repeat(10, 150px) ;
+        gap: 20px;
+    }
+    .img {
+        width: 150px;
+        height: 150px;
+    }
+    p {
+        width: 310px;
+        font-size: 30px;
+        line-height: 40px;
+    
+    }
+}
+
+@media (max-width: 500px) {
+    .ul {
+        grid-template-columns: repeat(1, 360px);
+        grid-template-rows:repeat(10, 100px) ;
+        gap: 10px;
+    }
+    .img {
+        width: 100px;
+        height: 100px;
+    }
+    p {
+        width: 260px;
+        font-size: 20px;
+        line-height: 25px;
+    
+    }
+}
+
+@media (max-width: 400px) {
+    .ul {
+        grid-template-columns: repeat(1, 300px);
+        grid-template-rows:repeat(10, 100px) ;
+        gap: 10px;
+    }
+    p {
+        width: 200px;
+        font-size: 18px;
+        line-height: 20px;
+    }
+}
+
