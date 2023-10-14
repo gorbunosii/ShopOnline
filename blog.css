@@ -113,6 +113,11 @@ p {
     padding: 1px 7px;
 }
 
+.page-blue {
+    color: #3670C7;
+    border: 1px solid #3670C7;
+}
+
 .button-left {
     width: 28px;
     background: url(picture/arrow-left.png) center no-repeat;

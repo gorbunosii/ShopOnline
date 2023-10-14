@@ -32,6 +32,14 @@ btns.forEach(elem => {
     li.forEach(elem => {
       elem.lastChild.remove();
     });
+    for (let i = 10; i--;) {
+      const page = document.querySelectorAll(`.page`);
+      if (params.get(`page`) === page[i].textContent) {
+        page[i].classList.add(`page-blue`);
+      } else {
+        page[i].classList.remove(`page-blue`);
+      }
+    };
     loadGoods(renderGoods);
   });
 });
