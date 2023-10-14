@@ -39,7 +39,7 @@ btns.forEach(elem => {
       } else {
         page[i].classList.remove(`page-blue`);
       }
-    };
+    }
     loadGoods(renderGoods);
   });
 });
