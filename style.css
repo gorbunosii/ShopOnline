@@ -2,6 +2,8 @@
 @import "start.css";
 @import "header.css";
 @import "main.css";
+@import "profitable.css";
+@import "footer.css";
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
 
@@ -10,6 +12,12 @@ html {
     color: white;
     margin: 0 auto;
     padding: 0;
+}
+
+button {
+    background: none;
+    border: none;
+    color: inherit;
 }
 
 .container {

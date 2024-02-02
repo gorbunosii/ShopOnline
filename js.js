@@ -24,7 +24,7 @@ timerInsert.insertAdjacentHTML(`beforeend`, `
 `);
 
 const timer = document.querySelector(`.timer`);
-timer.dataset.deadline = '2023/09/30 GMT+0300';
+timer.dataset.deadline = '2024/09/30 GMT+0300';
 
 const timerWork = deadline => {
   const bannerNumberDay = document.querySelector(`.banner-number-day`);

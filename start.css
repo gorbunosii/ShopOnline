@@ -59,8 +59,14 @@ iframe {
 */
 
 .visually-hidden {
-    position: fixed;
-    transform: scale(0);
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 0 !important;
+    width: 0 !important;
+    overflow: hidden;
 }
 
 
