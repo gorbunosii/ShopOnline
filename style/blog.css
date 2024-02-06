@@ -1,3 +1,5 @@
+@import "footer.css";
+@import "header.css";
 @import "normalize.css";
 @import "start.css";
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Lato:wght@300&display=swap');
@@ -41,62 +43,62 @@ p {
 }
 
 .one {
-    background: url(picture/boots.png);
+    background: url(../picture/boots.png);
     background-size: cover;
 }
 
 .two {
-    background: url(picture/mountains.png);
+    background: url(../picture/mountains.png);
         background-size: cover;
 }
 
 .three {
-    background: url(picture/fox.png);
+    background: url(../picture/fox.png);
         background-size: cover;
 }
 
 .four {
-    background: url(picture/laptop.png);
+    background: url(../picture/laptop.png);
         background-size: cover;
 }
 
 .five {
-    background: url(picture/orange.png);
+    background: url(../picture/orange.png);
         background-size: cover;
 }
 
 .six {
-    background: url(picture/digital.png);
+    background: url(../picture/digital.png);
         background-size: cover;
 }
 
 .seven {
-    background: url(picture/laptop-phone.png);
+    background: url(../picture/laptop-phone.png);
         background-size: cover;
 }
 
 .eight {
-    background: url(picture/aloe.png);
+    background: url(../picture/aloe.png);
         background-size: cover;
 }
 
 .nine {
-    background: url(picture/plant.png);
+    background: url(../picture/plant.png);
         background-size: cover;
 }
 
 .ten {
-    background: url(picture/apartament.png);
+    background: url(../picture/apartament.png);
         background-size: cover;
 }
 
 .eleven {
-    background: url(picture/boots.png);
+    background: url(../picture/boots.png);
         background-size: cover;
 }
 
 .twelve {
-    background: url(picture/threads.png);
+    background: url(../picture/threads.png);
         background-size: cover;
 }
 
@@ -120,7 +122,7 @@ p {
 
 .button-left {
     width: 28px;
-    background: url(picture/arrow-left.png) center no-repeat;
+    background: url(../picture/arrow-left.png) center no-repeat;
     margin: 0 7px;
     background-color: inherit;
     border: none;
@@ -128,7 +130,7 @@ p {
 
 .button-right {
     width: 28px;
-    background: url(picture/arrow-right.png) center no-repeat;
+    background: url(../picture/arrow-right.png) center no-repeat;
     margin: 0 7px;
     background-color: inherit;
     border: none;
