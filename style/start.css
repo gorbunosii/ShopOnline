@@ -10,6 +10,7 @@ html {
 }
 
 body {
+    font-family: Lato;
     min-width: 320px;
     min-height: 100vh;
     margin: 0 auto;
