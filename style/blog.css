@@ -2,18 +2,16 @@
 @import "header.css";
 @import "normalize.css";
 @import "start.css";
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Lato:wght@300&display=swap');
 
 button {
+    font-family: 'Lato', sans-serif;
     border: none;
 }
 
-p {
+.text {
+    font-family: 'Lato', sans-serif;
     width: 400px;
     padding: 10px;
-    font-family: Lato;
     font-size: 28px;
     font-weight: 700;
     line-height: 40px;
@@ -26,7 +24,7 @@ p {
     display: flex;
 }
 
-.container {
+.container-main {
     display: flex;
     justify-content: center;
     margin: 50px 100px;

@@ -2,35 +2,55 @@
 @import "header.css";
 @import "normalize.css";
 @import "start.css";
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Lato:wght@300&display=swap');
-
-.header {
-    font-family: Lato;
-    font-size: 50px;
-    font-weight: 700;
-    line-height: 65px;
-    letter-spacing: 0em;
-    text-align: left;
-    margin-bottom: 50px;
-    max-width: 1095px;  
-}
 
 .main {
-    font-family: Lato;
+    display: grid;
+    grid-template-columns: 1fr 532px;
+    gap: 50px;
+
+    margin-bottom: 150px;
+    padding: 0 70px;
+}
+
+.main__append {
     font-size: 22px;
     font-weight: 400;
     line-height: 33px;
     letter-spacing: 0em;
-    text-align: left;
-    max-width: 1095px;    
-    margin-bottom: 150px;
+    text-align: left;  
 }
 
-.body {
-padding: 50px 70px;  
+.container-autor {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
 }
+
+.zagolovok {
+    padding: 0 70px;
+    display: flex;
+    margin-bottom: 50px;
+    gap: 20px;
+}
+
+.main-title {
+font-size: 50px;
+font-weight: 700;
+line-height: 65px;
+letter-spacing: 0em;
+text-align: left;
+margin-bottom: 15px;
+}
+
+.main-content {
+font-size: 22px;
+font-weight: 400;
+line-height: 33px;
+letter-spacing: 0em;
+text-align: left;
+margin-bottom: 70px;
+}
+
 
 .button-left {
     display: flex;
@@ -39,7 +59,7 @@ padding: 50px 70px;
 
 .p {
     line-height: 24px;
-font-family: Lato;
+    font-family: 'Lato', sans-serif;
 font-size: 16px;
 font-weight: 700;
 line-height: 21px;
@@ -48,22 +68,10 @@ text-align: left;
 
 }
 
-.container {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1095px;  
-}
 
-.img {
-margin-right: 15px;
-}
-
-.img-article {
-    position: fixed;
-    right: 20px;
-    top: 50px;
-}
-
-.duster {
-    top: 410px;
+.blok-img {
+    max-width: 532px;
+flex-direction: column;
+display: flex;
+gap: 15px;
 }

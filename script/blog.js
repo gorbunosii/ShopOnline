@@ -15,6 +15,7 @@ const renderGoods = (data) => {
     arrData.data.forEach((el, index) => {
       const a = document.createElement(`a`);
       const p = document.createElement(`p`);
+      p.classList = 'text';
       a.href = `article.html?id=${el.id}`;
       p.textContent = el.title;
       a.append(p);
