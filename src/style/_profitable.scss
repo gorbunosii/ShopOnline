@@ -1,0 +1,371 @@
+.profitable {
+    margin-bottom: 70px;
+
+    &-h3 {
+        font-family: Lato;
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 65px;
+        letter-spacing: 0em;
+        text-align: left; 
+        color: #2D2D2D;
+        margin-bottom: 50px;
+    }
+}
+
+.grid-net {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows:repeat(2, 1fr) ;
+    gap: 30px;
+    @media (max-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:repeat(3, 1fr) ;
+    gap: 20px;
+}
+@media (max-width: 320px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows:repeat(4, 1fr) ;
+    gap: 10px;
+}
+}
+
+.grid-item {
+
+    &__two-grid {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        @media (max-width: 1024px) {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+        }
+        @media (max-width: 320px) {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+        }
+    }
+
+    &__three-grid {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2; 
+        @media (max-width: 1024px) {
+            grid-column: 2 / 3;
+            grid-row: 1 / 2; 
+        }
+        @media (max-width: 320px) {
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+        }
+    }
+
+    &__four-grid {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+        @media (max-width: 1024px) {
+            grid-column: 3 / 4;
+            grid-row: 1 / 2;
+        }
+        @media (max-width: 320px) {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+        }
+    }
+
+    &__five-grid {
+        grid-column: 4 / 5;
+        grid-row: 1 / 2;  
+        @media (max-width: 1024px) {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+        }
+        @media (max-width: 320px) {
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+        }
+    }
+
+    &__six-grid {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3; 
+        @media (max-width: 1024px) {
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+        }
+        @media (max-width: 320px) {
+            grid-column: 1 / 2;
+            grid-row: 3 / 4;
+        }
+    }
+
+    &__seven-grid {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        @media (max-width: 1024px) {
+            grid-column: 1 / 2;
+            grid-row: 3 / 4;
+        }
+        @media (max-width: 320px) {
+            grid-column: 2 / 3;
+            grid-row: 3 / 4;
+        }
+    }
+
+    &__eight-grid {
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+        @media (max-width: 1024px) {
+            grid-column: 2 / 3;
+            grid-row: 3 / 4;
+        }
+        @media (max-width: 320px) {
+            grid-column: 1 / 2;
+            grid-row: 4 / 5;
+        }
+    }
+
+    &__nine-grid {
+        grid-column: 4 / 5;
+        grid-row: 2 / 3;
+        @media (max-width: 1024px) {
+            grid-column: 3 / 4;
+            grid-row: 3 / 4;
+        }
+        @media (max-width: 320px) {
+            grid-column: 2 / 3;
+            grid-row: 4 / 5;
+        }
+    }
+
+    &__two {
+        position:relative;
+        background: linear-gradient(181.33deg, rgba(0, 0, 0, 0) 9.23%, rgba(0, 0, 0, 0.2) 98.87%), url(../picture/two.png) center no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 295px;
+        border-radius: 20px;
+        padding: 20px;
+        @media (max-width: 1024px) {
+            max-width: 300px;
+            max-height: 295px;
+        }
+        @media (max-width: 320px) {
+            max-width: 130px;
+            max-height: 130px;
+        }
+    }
+
+    &__three {
+        position:relative;
+    background: linear-gradient(179.81deg, rgba(7, 7, 7, 0) 30.77%, rgba(0, 0, 0, 0.2) 99.83%), url(../picture/three.jpg) center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 295px;
+    border-radius: 20px;
+    padding: 20px;
+            @media (max-width: 1024px) {
+            max-width: 300px;
+            max-height: 295px;
+        }
+        @media (max-width: 320px) {
+            max-width: 130px;
+            max-height: 130px;
+        }
+}
+
+    &__four {
+        position:relative;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 25.39%, rgba(0, 0, 0, 0.16) 100%), url(../picture/four.jpg) center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 295px;
+    border-radius: 20px;
+    padding: 20px;
+            @media (max-width: 1024px) {
+            max-width: 300px;
+            max-height: 295px;
+        }
+        @media (max-width: 320px) {
+            max-width: 130px;
+            max-height: 130px;
+        }
+}
+
+    &__five {
+        position:relative;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 7.46%, rgba(0, 0, 0, 0.2) 100%), url(../picture/five.jpg) center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 295px;
+    border-radius: 20px;
+    padding: 30px;
+            @media (max-width: 1024px) {
+            max-width: 300px;
+            max-height: 295px;
+        }
+        @media (max-width: 320px) {
+            max-width: 130px;
+            max-height: 130px;
+        }
+}
+
+    &__six {
+        position:relative;
+    background: linear-gradient(180.99deg, rgba(0, 0, 0, 0) 8.18%, rgba(0, 0, 0, 0.2) 99.15%), url(../picture/six.jpg) center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 295px;
+    border-radius: 20px;
+    padding: 20px;
+            @media (max-width: 1024px) {
+            max-width: 300px;
+            max-height: 295px;
+        }
+        @media (max-width: 320px) {
+            max-width: 130px;
+            max-height: 130px;
+        }
+}
+
+    &__seven {
+        position:relative;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 12.28%, rgba(0, 0, 0, 0.2) 100%), url(../picture/seven.jpg) center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 295px;
+    border-radius: 20px;
+    padding: 30px;
+            @media (max-width: 1024px) {
+            max-width: 300px;
+            max-height: 295px;
+        }
+        @media (max-width: 320px) {
+            max-width: 130px;
+            max-height: 130px;
+        }
+}
+
+    &__eight {
+        position:relative;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 25.39%, rgba(0, 0, 0, 0.16) 100%), url(../picture/eight.jpg) center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 295px;
+    border-radius: 20px;
+    padding: 50px;
+            @media (max-width: 1024px) {
+            max-width: 300px;
+            max-height: 295px;
+        }
+        @media (max-width: 320px) {
+            max-width: 130px;
+            max-height: 130px;
+        }
+}
+
+    &__nine {
+        position:relative;
+    background: linear-gradient(179.81deg, rgba(7, 7, 7, 0) 30.77%, rgba(0, 0, 0, 0.2) 99.83%), url(../picture/nine.jpg) center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 295px;
+    border-radius: 20px;
+    padding: 20px;
+            @media (max-width: 1024px) {
+            max-width: 300px;
+            max-height: 295px;
+        }
+        @media (max-width: 320px) {
+            max-width: 130px;
+            max-height: 130px;
+        }
+}
+
+&__text {
+    margin-right: 15px;
+    font-family: Lato;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #2D2D2D;
+    @media (max-width: 1024px) {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    @media (max-width: 320px) {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 10px;
+    }
+}
+
+&__text-d {
+    display: flex;
+    align-items: end;
+    text-decoration: line-through;
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #2D2D2D;
+    @media (max-width: 1024px) {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    @media (max-width: 320px) {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 10px;
+    }
+}
+
+&__text-des {
+    font-family: Lato;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #2D2D2D;
+    @media (max-width: 1024px) {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    @media (max-width: 320px) {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 10px;
+    }
+}
+
+}
+
+.sale-net {
+    position: absolute;
+    bottom: 10px;
+    display: grid;
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    background-color: #FFBD13;
+    font-weight: 700;
+    font-size: 30px;
+    place-items: center;
+    @media (max-width: 1024px) {
+        width: 64px;
+        height: 64px;
+        font-size: 20px;
+    }
+    @media (max-width: 320px) {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+}
+
+.price {
+    display: flex;
+}

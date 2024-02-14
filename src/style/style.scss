@@ -1,11 +1,11 @@
-@import "normalize.css";
-@import "start.css";
-@import "header.css";
-@import "main.css";
-@import "profitable.css";
-@import "footer.css";
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+@import "var";
+@import "fonts";
+@import "normalize";
+@import "start";
+@import "header";
+@import "main";
+@import "profitable";
+@import "footer";
 
 html {
     font-family: 'Lato', sans-serif;

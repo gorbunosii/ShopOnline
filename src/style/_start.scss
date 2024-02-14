@@ -54,10 +54,6 @@ iframe {
     border: none;
 }
 
-/*
-Доступно скрываю элементы
-*/
-
 .visually-hidden {
     position: absolute !important;
     clip: rect(1px 1px 1px 1px);
@@ -68,19 +64,3 @@ iframe {
     width: 0 !important;
     overflow: hidden;
 }
-
-
-/*
-Пример контейнера
-Если контейнер 1180px по макету,
-то для max-width прибавляем паддинги 30px*2,
-в итоге 1240px
-Чтобы контент не прижимался к краям экрана
-*/
-/*
-.container {
-    max-width: 0;
-    padding: 0 ;
-    margin: 0 auto;
-}
-*/

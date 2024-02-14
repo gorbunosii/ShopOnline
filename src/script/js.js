@@ -122,5 +122,11 @@ const timerWork = deadline => {
   start();
 };
 
+$(`.acc__list`).accordion({
+  active: true,
+  collapsible: true,
+  heightStyle: `content`,
+});
+
 timerWork(timer.dataset.deadline);
 
