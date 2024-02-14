@@ -1,0 +1,102 @@
+.header {
+    max-width: 1770px;
+    padding: 30px 70px;
+    margin: 0 auto;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 190px 151px minmax(280px, 757px) minmax(200px, 354px);
+    gap: 20px;
+
+    &__logo {
+        font-family: Lato;
+        font-weight: 400;
+        color: $color-black;
+        font-size: 30px;
+        letter-spacing: 0.06em;
+        font-weight: 700;
+        line-height: 54px;
+        background: none;
+        border: none;
+    }
+
+    span {
+        color: $color-button;
+        font-size: 30px;
+        letter-spacing: 0.06em;
+        font-weight: 700;
+        line-height: 54px;
+        background: none;
+        border: none;
+    }
+
+    &__menu {
+        font-family: Lato;
+        color: $color-white;
+        font-size: 22px;
+        line-height: 33px;
+        background-color: $color-button;
+        border-radius: 10px;
+        max-width: 151px;
+        height: 54px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    &__form {
+        max-width: 757px;
+        height: 54px;
+        position: relative;
+    }
+
+    &__search {
+        max-width: 757px;
+        height: 54px;
+        width: 100%;
+        font-weight: 700;
+        font-size: 16px;
+        padding: 15px 10px 18px 40px;
+        background: $color-search-bg;
+        color: $color-search-text;
+        border-radius: 30px;
+        border: none;
+    }
+
+    &__button {
+        color: $color-white;
+        width: 100%;
+        background: $color-button;
+        border-radius: 30px;
+        position: absolute;
+        max-width: 101px;
+        height: 54px;
+        right: 0;
+    }
+
+    &-list {
+        display: grid;
+        grid-template-columns: 73px 70px 82px;
+        padding: 0;
+        margin: 0;
+        justify-content: space-between;
+        max-width: 354px;
+
+        &__link {
+            height: 54px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            font-weight: 700;
+            font-size: 16px;
+            color: $color-footer;
+        }
+
+        &__text {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 130%;
+        }
+    }
+}

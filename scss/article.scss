@@ -1,0 +1,86 @@
+@charset 'utf-8';
+@import "var";
+@import "fonts";
+@import "normalize";
+@import "start";
+@import "header";
+@import "footer";
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 532px;
+    gap: 50px;
+    margin-bottom: 150px;
+    padding: 0 70px;
+
+    &__append {
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 33px;
+        letter-spacing: 0em;
+        text-align: left;  
+    }
+
+    &-title {
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 65px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 15px;
+        }
+
+    &-title {
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 65px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 15px;
+        }
+
+    &-content {
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 33px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 70px;
+        }
+}
+
+.container-autor {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.zagolovok {
+    padding: 0 70px;
+    display: flex;
+    margin-bottom: 50px;
+    gap: 20px;
+}
+
+.button-left {
+    display: flex;
+    border: none;
+}
+
+.p {
+    line-height: 24px;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+
+.blok-img {
+    max-width: 532px;
+flex-direction: column;
+display: flex;
+gap: 15px;
+}

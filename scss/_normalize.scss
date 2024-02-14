@@ -1,6 +1,8 @@
 html {
     line-height: 1.15; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
+    position: relative;
+    box-sizing: border-box;
   }
   
   main {
@@ -25,6 +27,8 @@ html {
   
   a {
     background-color: transparent;
+    text-decoration: none;
+    color: inherit;
   }
   
   abbr[title] {
@@ -74,7 +78,6 @@ html {
   optgroup,
   select,
   textarea {
-    font-family: inherit; /* 1 */
     font-size: 100%; /* 1 */
     line-height: 1.15; /* 1 */
     margin: 0; /* 2 */
@@ -88,6 +91,11 @@ html {
   button,
   select { /* 1 */
     text-transform: none;
+    background: none;
+    border: none;
+    color: inherit;
+    padding: 0;
+    cursor: pointer;
   }
   
   button,
@@ -173,4 +181,9 @@ html {
   [hidden] {
     display: none;
   }
-  
+
+  *,
+*::before,
+*::after {
+    box-sizing: inherit;
+}

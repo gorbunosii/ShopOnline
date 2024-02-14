@@ -1,0 +1,158 @@
+@charset 'utf-8';
+@import "var";
+@import "fonts";
+@import "normalize";
+@import "start";
+@import "header";
+@import "footer";
+
+.text {
+    font-family: Lato;
+    font-weight: 400;
+    width: 400px;
+    padding: 10px;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: left;
+}
+
+.li {
+    display: flex;
+}
+
+.container-main {
+    display: flex;
+    justify-content: center;
+    margin: 50px 100px;
+}
+
+.ul {
+    display: grid;
+    grid-template-columns: repeat(2, 570px);
+    grid-template-rows:repeat(5, 160px) ;
+    gap: 20px;
+}
+
+.img {
+    width: 160px;
+    height: 160px;
+}
+
+.one {
+    background: {
+        image: url(../picture/boots.png);
+        size: cover;
+    } 
+}
+
+.two {
+        background: {
+            image: url(../picture/mountains.png);
+            size: cover;
+        }
+}
+
+.three {
+        background: {
+            image: url(../picture/fox.png);
+            size: cover;
+        }
+}
+
+.four {
+        background: {
+            image: url(../picture/laptop.png);
+            size: cover;
+        }
+}
+
+.five {
+        background: {
+            image: url(../picture/orange.png);
+            size: cover;
+        }
+}
+
+.six {
+        background: {
+            image: url(../picture/digital.png);
+            size: cover;
+        }
+}
+
+.seven {
+        background: {
+            image: url(../picture/laptop-phone.png);
+            size: cover;
+        }
+}
+
+.eight {
+        background: {
+            image: url(../picture/aloe.png);
+            size: cover;
+        }
+}
+
+.nine {
+        background: {
+            image: url(../picture/plant.png);
+            size: cover;
+        }
+}
+
+.ten {
+        background: {
+            image: url(../picture/apartament.png);
+            size: cover;
+        }
+}
+
+.eleven {
+        background: {
+            image: url(../picture/boots.png);
+            size: cover;
+        }
+}
+
+.twelve {
+        background: {
+            image: url(../picture/threads.png);
+            size: cover;
+        }
+}
+
+.page {
+    margin: 0 2px;
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    border: 1px solid $color-footer;
+    font-weight: 700;
+    border-radius: 4px;
+    padding: 1px 7px;
+}
+
+.page-blue {
+    color: $color-button;
+    border: 1px solid $color-button;
+}
+
+.button-left {
+    width: 28px;
+    background: url(../picture/arrow-left.png) center no-repeat;
+    margin: 0 7px;
+    background-color: inherit;
+    border: none;
+}
+
+.button-right {
+    width: 28px;
+    background: url(../picture/arrow-right.png) center no-repeat;
+    margin: 0 7px;
+    background-color: inherit;
+    border: none;
+}
