@@ -26,3 +26,13 @@ const renderGoods = (data) => {
 };
 
 loadGoods(renderGoods);
+
+const a = $(`.acc__list`);
+
+console.log(a);
+
+$(`.acc__list`).accordion({
+  active: true,
+  collapsible: true,
+  heightStyle: `content`,
+});

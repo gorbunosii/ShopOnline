@@ -1,4 +1,7 @@
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     font-family: Lato;
     font-weight: 400;
     min-width: 320px;

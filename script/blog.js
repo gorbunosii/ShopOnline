@@ -33,7 +33,7 @@ btns.forEach(elem => {
     li.forEach(elem => {
       elem.lastChild.remove();
     });
-    for (let i = 10; i--;) {
+    for (let i = 3; i--;) {
       const page = document.querySelectorAll(`.page`);
       if (params.get(`page`) === page[i].textContent) {
         page[i].classList.add(`page-blue`);
@@ -66,11 +66,16 @@ right.addEventListener('click', e => {
   li.forEach(elem => {
     elem.lastChild.remove();
   });
-  if (params.get(`page`) > 10) {
-    params.set(`page`, `10`);
+  if (params.get(`page`) > 3) {
+    params.set(`page`, `3`);
   }
   loadGoods(renderGoods);
 });
 
 loadGoods(renderGoods);
 
+$(`.acc__list`).accordion({
+  active: true,
+  collapsible: true,
+  heightStyle: `content`,
+});

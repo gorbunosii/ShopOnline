@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BLOG</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="picture/free-icon-online-shopping-1063004.png">
+    <script defer src =" https://code.jquery.com/jquery-3.7.1.min.js "></script>
+    <script defer src="./script/jquery-ui.min.js"></script>
     <link rel="stylesheet" href="style/style-blog.css">
     <script defer src="script/blog.js" ></script>
 </head>
@@ -67,13 +69,6 @@
                 <button><div class="page">1</div></button>
                 <button><div class="page">2</div></button>
                 <button><div class="page">3</div></button>
-                <button><div class="page">4</div></button>
-                <button><div class="page">5</div></button>
-                <button><div class="page">6</div></button>
-                <button><div class="page">7</div></button>
-                <button><div class="page">8</div></button>
-                <button><div class="page">9</div></button>
-                <button><div class="page">10</div></button>
             </div>
             <button class="button-right"></button>
         </div>
@@ -84,35 +79,35 @@
             <div class="container">
                 <div class="footer__flex">
                     <div class="footer__up">
-                        <p tabindex="27" class="header__logo">Shop<span>Online</span></p>
-                        <p tabindex="28" class="footer__up-text">Каталог</p>
-                        <p tabindex="29" class="footer__up-text"></p>
-                        <p tabindex="30" class="footer__up-text">Покупателям</p>
-                        <p tabindex="31" class="footer__up-text">Контакты</p>
+                        <p tabindex="27" class="header__logo">Shop<span class="header__logo header__logo_blue">Online</span></p>
+                        <p tabindex="28" class="footer__up-text footer__up-text-two">Каталог</p>
+                        <p tabindex="29" class="footer__up-text footer__up-text-three"></p>
+                        <p tabindex="30" class="footer__up-text footer__up-text-four">Покупателям</p>
+                        <p tabindex="31" class="footer__up-text footer__up-text-five">Контакты</p>
                     </div>
                     <div class="footer__center">
-                        <div></div>
-                        <div>
+                        <div class="footer__center-one"></div>
+                        <div class="footer__center-two">
                             <p tabindex="32" class="footer__center-text">Смартфоны</p>
                             <p tabindex="33" class="footer__center-text">Ноутбуки</p>
                             <p tabindex="34" class="footer__center-text">Ювелирные изделия</p>
                             <p tabindex="35" class="footer__center-text">Одежда</p>
                             <p tabindex="36" class="footer__center-text">Бытовая техника</p>
                         </div>
-                        <div>
+                        <div class="footer__center-three">
                             <p tabindex="37" class="footer__center-text">Бытовая химия</p>
                             <p tabindex="38" class="footer__center-text">Книги и журналы</p>
                             <p tabindex="39" class="footer__center-text">Домашний текстиль</p>
                             <p tabindex="40" class="footer__center-text">Электроника</p>
                             <p tabindex="41" class="footer__center-text">Косметика</p>
                         </div>
-                        <div>
+                        <div class="footer__center-four">
                             <p tabindex="42" class="footer__center-text">Оплата заказа</p>
                             <p tabindex="43" class="footer__center-text">Условия доставки</p>
                             <p tabindex="44" class="footer__center-text">Условия возврата заказа</p>
                             <p tabindex="45" class="footer__center-text">Блог</p>
                         </div>
-                        <div>
+                        <div class="footer__center-five">
                             <address class="footer__address">
                             <a href="tel:+79378392361" tabindex="46" class="footer__center-text">Тел: +7 937 839 23-61</a>
                             <a href="mailto:OnlineShop@gmail.com" tabindex="47" class="footer__center-text">Email: OnlineShop@gmail.com</a>
@@ -138,6 +133,33 @@
                         </div>
                     </div>
                 </div>
+                <section class="footer__acc">
+                    <div class="footer__containe-acc">
+                      <ul class="acc__list">
+                        <li class="footer__acc__item">
+                          <h3 class="acc__button">
+                            <p class="footer__acc__title">Каталог</p>
+                          </h3>
+                          <p tabindex="32" class="footer__center-text">Смартфоны
+                            Ноутбуки
+                            Ювелирные изделия
+                            Одежда
+                            Бытовая техника
+                          </p>
+                        </li>
+                        <li class="acc__item">
+                          <h3 class="acc__button">
+                            <p class="footer__acc__title">Покупателям</p>
+                          </h3>
+                          <p tabindex="42" class="footer__center-text">Оплата заказа
+                            Условия доставки
+                            Условия возврата заказа
+                            Блог
+                          </p>
+                        </li>
+                      </ul>
+                    </div>
+                  </section>
                 <div class="footer__down">
                     <p class="footer__text">© OnlineShop, 2021</p>
                     <p class="footer__text">Design by Anastasia Ilina
