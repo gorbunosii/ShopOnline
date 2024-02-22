@@ -60,6 +60,44 @@
         align-items: center;
         justify-content: center;
         gap: 10px;
+
+        &-list {
+                display: none;
+                position: absolute;
+                background: $color-white;
+                top: 120px;
+        }
+
+        &_svg {
+                background: url(../picture/burger.png) center no-repeat;
+                background-image: image-set(
+                    url(../picture/burger.avif) 2x,
+                    url(../picture/burger.avif) 1x,
+                    url(../picture/burger.webp) 2x,
+                    url(../picture/burger.webp) 1x,
+                    url(../picture/oburgerne.png) 2x,
+                    url(../picture/burger.png) 1x
+                );
+                background-size: cover;
+                width: 24px;
+                height: 24px;
+        }
+
+        &_svg-close {
+                background: url(../picture/close-burger.png) center no-repeat;
+                background-image: image-set(
+                    url(../picture/close-burger.avif) 2x,
+                    url(../picture/close-burger.avif) 1x,
+                    url(../picture/close-burger.webp) 2x,
+                    url(../picture/close-burger.webp) 1x,
+                    url(../picture/close-burger.png) 2x,
+                    url(../picture/close-burger.png) 1x
+                );
+                background-size: cover;
+                width: 24px;
+                height: 24px;
+        }
+
         @media (max-width: 1200px) {
                 grid-column: 1 / 2;
                 grid-row: 2 / 3;

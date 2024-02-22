@@ -1,5 +1,13 @@
 .banner {
     background: url(../picture/one.png) center no-repeat;
+    background-image: image-set(
+        url(../picture/one.avif) 2x,
+        url(../picture/one.avif) 1x,
+        url(../picture/one.webp) 2x,
+        url(../picture/one.webp) 1x,
+        url(../picture/one.png) 2x,
+        url(../picture/one.png) 1x
+    );
     background-size: cover;
     border-radius: 20px;
     color: #ffffff;

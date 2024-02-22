@@ -1,11 +1,11 @@
-@import "var";
-@import "fonts";
-@import "normalize";
-@import "start";
-@import "header";
-@import "main";
-@import "profitable";
-@import "footer";
+@import "components/var";
+@import "components/fonts";
+@import "components/normalize";
+@import "components/start";
+@import "components/header";
+@import "components/main";
+@import "components/profitable";
+@import "components/footer";
 
 html {
     font-family: 'Lato', sans-serif;
