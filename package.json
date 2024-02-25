@@ -7,15 +7,22 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "browserslist": [
+    "cover 99%",
+    "not IE 11"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.23.9",
+    "@babel/preset-env": "^7.23.9",
     "browser-sync": "^3.0.2",
     "critical": "^7.1.0",
     "del": "^7.1.0",
     "gulp": "^4.0.2",
     "gulp-avif": "^1.1.1",
+    "gulp-babel": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-concat": "^2.6.1",
     "gulp-cssimport": "^7.0.0",
@@ -29,6 +36,9 @@
     "sass": "^1.71.0"
   },
   "dependencies": {
+    "-": "^0.0.1",
+    "D": "^1.0.0",
+    "gulp-autoprefixer": "^9.0.0",
     "jquery": "^3.7.1"
   }
 }
