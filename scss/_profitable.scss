@@ -1,4 +1,5 @@
 .profitable {
+    padding: 30px 0;
     margin-bottom: 70px;
 
     &-h3 {
@@ -8,7 +9,7 @@
         line-height: 65px;
         letter-spacing: 0em;
         text-align: left; 
-        color: #2D2D2D;
+        color: $color-profitable-text;
         margin-bottom: 50px;
 
         @media (max-width: 1024px) {
@@ -167,7 +168,7 @@
 
     &__three {
         position:relative;
-    background: linear-gradient(179.81deg, rgba(7, 7, 7, 0) 30.77%, rgba(0, 0, 0, 0.2) 99.83%), url(../picture/three.jpg) center no-repeat;
+    background: linear-gradient(179.81deg, rgba(7, 7, 7, 0) 30.77%, rgba(0, 0, 0, 0.2) 99.83%), url(../picture/three.png) center no-repeat;
     background-size: cover;
     width: 100%;
     height: 295px;
@@ -185,7 +186,7 @@
 
     &__four {
         position:relative;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 25.39%, rgba(0, 0, 0, 0.16) 100%), url(../picture/four.jpg) center no-repeat;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 25.39%, rgba(0, 0, 0, 0.16) 100%), url(../picture/four.png) center no-repeat;
     background-size: cover;
     width: 100%;
     height: 295px;
@@ -203,7 +204,7 @@
 
     &__five {
         position:relative;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 7.46%, rgba(0, 0, 0, 0.2) 100%), url(../picture/five.jpg) center no-repeat;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 7.46%, rgba(0, 0, 0, 0.2) 100%), url(../picture/five.png) center no-repeat;
     background-size: cover;
     width: 100%;
     height: 295px;
@@ -257,7 +258,7 @@
 
     &__eight {
         position:relative;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 25.39%, rgba(0, 0, 0, 0.16) 100%), url(../picture/eight.jpg) center no-repeat;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 25.39%, rgba(0, 0, 0, 0.16) 100%), url(../picture/eight.png) center no-repeat;
     background-size: cover;
     width: 100%;
     height: 295px;
@@ -321,7 +322,7 @@
     line-height: 24px;
     letter-spacing: 0em;
     text-align: left;
-    color: #2D2D2D;
+    color: $color-profitable-text;
     @media (max-width: 1024px) {
         font-size: 20px;
         line-height: 20px;
@@ -340,7 +341,7 @@
     line-height: 33px;
     letter-spacing: 0em;
     text-align: left;
-    color: #2D2D2D;
+    color: $color-profitable-text;
     @media (max-width: 1024px) {
         font-size: 20px;
         line-height: 20px;
