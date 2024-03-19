@@ -97,6 +97,35 @@ export const createRow = ({title, category, units, count,
   return tr;
 };
 
+export const createGoods = ({title, category, units, count,
+  price, image, description, discount, id}) => {
+  const card = document.createElement('a');
+  card.classList.add(`goods-goods`);
+  card.href = `card.html?id=${id}`;
+  const img = document.createElement(`img`);
+  img.classList.add(`goods-img`);
+  img.src = image;
+  const sale = document.createElement('div');
+  sale.classList.add(`goods-sale`);
+  sale.textContent = `-50%`;
+  const priceAll = document.createElement('div');
+  priceAll.classList.add(`goods-priceAll`);
+  const priceNew = document.createElement('p');
+  priceNew.classList.add(`goods-priceNew`);
+  priceNew.textContent = price;
+  const priceOld = document.createElement('p');
+  priceOld.classList.add(`goods-priceOld`);
+  priceOld.textContent = Math.round(price * 0.28);
+  const descriptionCard = document.createElement('p');
+  descriptionCard.classList.add(`goods-description`);
+  descriptionCard.textContent = category;
+  priceAll.append(priceNew, priceOld);
+  card.append(img, sale, priceAll, descriptionCard);
+
+  return card;
+};
+
 export default {
   createRow,
+  createGoods,
 };

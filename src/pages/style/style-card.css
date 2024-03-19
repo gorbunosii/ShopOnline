@@ -501,6 +501,20 @@ iframe {
     height: 25px;
   }
 }
+.header-list__link-backet {
+  position: relative;
+}
+.header-list__link-backet::before {
+  content: attr(data-count);
+  font-family: Lato;
+  position: absolute;
+  font-size: 14px;
+  top: -5px;
+  right: 10px;
+  color: #3670C7;
+  background-color: white;
+  border-radius: 50%;
+}
 .header-list__text {
   font-weight: 700;
   font-size: 16px;

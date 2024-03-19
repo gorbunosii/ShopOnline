@@ -143,5 +143,15 @@ $('.header__menu').click(() => {
   $('.header__menu-list').slideToggle(300);
 });
 
+const server = async () => {
+  const response = await fetch(`https://lydian-romantic-litter.glitch.me/api/goods`);
+  const data = await response.json();
+  const countData = document.querySelector('.header-list__link-backet');
+  countData.dataset.count = data.goods.length;
+};
+
+server();
+
+
 timerWork(timer.dataset.deadline);
 

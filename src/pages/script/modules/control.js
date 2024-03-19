@@ -8,6 +8,7 @@ export const sumAll = number => {
   const discount = document.querySelector(`.basket__card_item-text-gray-discount`);
   const photo = Array.from(document.querySelectorAll(`.td-body-picture`));
   const photoBottom = document.querySelector(`.basket__card_delivery-photo`);
+  const countData = document.querySelector('.header-list__link-backet');
   const arrOne = price.map(item => item.textContent.slice(0, -2));
   const arrTwo = count.map(item => item.textContent);
   const arr = [];
@@ -26,6 +27,7 @@ export const sumAll = number => {
     photoBottom.append(picture);
   });
   dataBefore.dataset.count = price.length;
+  countData.dataset.count = price.length;
   dataCount.textContent = price.length;
   discount.textContent = Math.round(result * 0.28) + ' ₽';
 };
@@ -53,6 +55,23 @@ export const thisChecked = btn => {
   });
 };
 
+const toggleIcon = document.querySelector('.header__menu');
+const toggleSVG = document.querySelector('.header__menu_svg');
+const toggleP = document.querySelector('.header__menu_svg');
+
+toggleIcon.addEventListener(`click`, e => {
+  const target = e.target;
+  if (target === toggleIcon || toggleSVG || toggleP) {
+    toggleSVG.classList.toggle('header__menu_svg-close');
+  }
+});
+
 $('.header__menu').click(() => {
   $('.header__menu-list').slideToggle(300);
+});
+
+$(`.acc__list`).accordion({
+  active: true,
+  collapsible: true,
+  heightStyle: `content`,
 });

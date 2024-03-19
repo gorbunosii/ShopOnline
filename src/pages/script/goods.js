@@ -1,14 +1,20 @@
-const toggleIcon = document.querySelector('.header__menu');
-const toggleSVG = document.querySelector('.header__menu_svg');
-const toggleP = document.querySelector('.header__menu_svg');
+import {renderCRM, renderGoods} from './modules/render.js';
+import modulStorage from './modules/server.js';
+const {fetchRequest} = modulStorage;
 
-toggleIcon.addEventListener(`click`, e => {
-  const target = e.target;
-  if (target === toggleIcon || toggleSVG || toggleP) {
-    toggleSVG.classList.toggle('header__menu_svg-close');
-  }
-});
+const init = () => {
+  const {
+    btnDel,
+    tableTbody,
+    sumModal,
+    idCheckbox,
+    URL,
+  } = renderCRM();
 
-$('.header__menu').click(() => {
-  $('.header__menu-list').slideToggle(300);
-});
+  fetchRequest(URL, {
+    method: `get`,
+    callback: renderGoods,
+  });
+};
+
+init();
