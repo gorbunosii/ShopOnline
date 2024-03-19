@@ -36,3 +36,7 @@ $(`.acc__list`).accordion({
   collapsible: true,
   heightStyle: `content`,
 });
+
+$('.header__menu').click(() => {
+  $('.header__menu-list').slideToggle(300);
+});

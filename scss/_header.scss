@@ -63,6 +63,29 @@
         align-items: center;
         justify-content: center;
         gap: 10px;
+
+        &-list {
+                z-index: 1;
+                display: none;
+                position: absolute;
+                background: $color-white;
+                top: 120px;
+        }
+
+        &_svg {
+                background: url(/picture/burger.png) center no-repeat;
+                background-size: cover;
+                width: 24px;
+                height: 24px;
+        }
+
+        &_svg-close {
+                background: url(../picture/close-burger.png) center no-repeat;
+                background-size: cover;
+                width: 24px;
+                height: 24px;
+        }
+
         @media (max-width: 1200px) {
                 grid-column: 1 / 2;
                 grid-row: 2 / 3;

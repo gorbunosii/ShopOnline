@@ -52,3 +52,7 @@ export const thisChecked = btn => {
     sumAll();
   });
 };
+
+$('.header__menu').click(() => {
+  $('.header__menu-list').slideToggle(300);
+});

@@ -334,6 +334,25 @@ iframe {
   justify-content: center;
   gap: 10px;
 }
+.header__menu-list {
+  z-index: 1;
+  display: none;
+  position: absolute;
+  background: #ffffff;
+  top: 120px;
+}
+.header__menu_svg {
+  background: url(/picture/burger.png) center no-repeat;
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+}
+.header__menu_svg-close {
+  background: url(../picture/close-burger.png) center no-repeat;
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+}
 @media (max-width: 1200px) {
   .header__menu {
     grid-column: 1/2;

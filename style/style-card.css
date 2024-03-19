@@ -334,6 +334,25 @@ iframe {
   justify-content: center;
   gap: 10px;
 }
+.header__menu-list {
+  z-index: 1;
+  display: none;
+  position: absolute;
+  background: #ffffff;
+  top: 120px;
+}
+.header__menu_svg {
+  background: url(/picture/burger.png) center no-repeat;
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+}
+.header__menu_svg-close {
+  background: url(../picture/close-burger.png) center no-repeat;
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+}
 @media (max-width: 1200px) {
   .header__menu {
     grid-column: 1/2;
@@ -494,6 +513,7 @@ iframe {
 }
 
 .profitable {
+  padding: 30px 0;
   margin-bottom: 70px;
 }
 .profitable-h3 {
@@ -693,7 +713,7 @@ iframe {
 }
 .grid-item__three {
   position: relative;
-  background: linear-gradient(179.81deg, rgba(7, 7, 7, 0) 30.77%, rgba(0, 0, 0, 0.2) 99.83%), url(../picture/three.jpg) center no-repeat;
+  background: linear-gradient(179.81deg, rgba(7, 7, 7, 0) 30.77%, rgba(0, 0, 0, 0.2) 99.83%), url(../picture/three.png) center no-repeat;
   background-size: cover;
   width: 100%;
   height: 295px;
@@ -714,7 +734,7 @@ iframe {
 }
 .grid-item__four {
   position: relative;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 25.39%, rgba(0, 0, 0, 0.16) 100%), url(../picture/four.jpg) center no-repeat;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 25.39%, rgba(0, 0, 0, 0.16) 100%), url(../picture/four.png) center no-repeat;
   background-size: cover;
   width: 100%;
   height: 295px;
@@ -735,7 +755,7 @@ iframe {
 }
 .grid-item__five {
   position: relative;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 7.46%, rgba(0, 0, 0, 0.2) 100%), url(../picture/five.jpg) center no-repeat;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 7.46%, rgba(0, 0, 0, 0.2) 100%), url(../picture/five.png) center no-repeat;
   background-size: cover;
   width: 100%;
   height: 295px;
@@ -798,7 +818,7 @@ iframe {
 }
 .grid-item__eight {
   position: relative;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 25.39%, rgba(0, 0, 0, 0.16) 100%), url(../picture/eight.jpg) center no-repeat;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 25.39%, rgba(0, 0, 0, 0.16) 100%), url(../picture/eight.png) center no-repeat;
   background-size: cover;
   width: 100%;
   height: 295px;
