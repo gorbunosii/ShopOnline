@@ -11,5 +11,5 @@ $color-search-text: #8F8F8F;
         weight: $weight;
         display: swap;
     }
-    src: url("../fonts/#{$name}-#{$weight}.ttf") format('ttf');
+    src: url("../fonts/#{$name}-#{$weight}.woff2") format('woff2');
 }

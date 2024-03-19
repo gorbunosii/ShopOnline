@@ -3,53 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>article</title>
+    <title>Shop</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style/style-card.css">
+    <link rel="stylesheet" href="style/style-shop.css">
     <script defer src =" https://code.jquery.com/jquery-3.7.1.min.js "></script>
     <script defer src="./script/jquery-ui.min.js"></script>
-    <script defer src="script/card.js" ></script>
+    <script type="module" src="script/shop.js" ></script>
 </head>
 <body class="body">
     <header class="header">
-        <button href="#" tabindex="1" class="header__logo" aria-label="Логотиа компании ShopOnline">Shop<span class="header__logo header__logo_blue">Online</span></button>
+        <a href="../index.html" tabindex="1" class="header__logo" aria-label="Логотиа компании ShopOnline">Shop<span class="header__logo header__logo_blue">Online</span></a>
         <button href="#" tabindex="2" class="header__menu" aria-label="Открыть меню"><p class="header__menu_svg"></p>
         <p class="header__menu_p">Меню</p></button>
         <div class="header__menu-list">
-                <div class="footer__up">
-                    <p tabindex="28" class="footer__up-text footer__up-text-two black">Каталог</p>
-                    <p tabindex="29" class="footer__up-text footer__up-text-three black"></p>
-                    <p tabindex="30" class="footer__up-text footer__up-text-four black">Покупателям</p>
-                    <p tabindex="31" class="footer__up-text footer__up-text-five black">Связаться с нами</p>
+            <div class="footer__up">
+                <p tabindex="28" class="footer__up-text footer__up-text-two black">Каталог</p>
+                <p tabindex="29" class="footer__up-text footer__up-text-three black"></p>
+                <p tabindex="30" class="footer__up-text footer__up-text-four black">Покупателям</p>
+                <p tabindex="31" class="footer__up-text footer__up-text-five black">Связаться с нами</p>
+            </div>
+            <div class="footer__center">
+                <div class="footer__center-two">
+                    <a tabindex="32" class="footer__center-text black">Смартфоны</a>
+                    <a tabindex="33" class="footer__center-text black">Ноутбуки</a>
+                    <a tabindex="34" class="footer__center-text black">Ювелирные изделия</a>
+                    <a tabindex="35" class="footer__center-text black">Одежда</a>
+                    <a tabindex="36" class="footer__center-text black">Бытовая техника</a>
                 </div>
-                <div class="footer__center">
-                    <div class="footer__center-two">
-                        <p tabindex="32" class="footer__center-text black">Смартфоны</p>
-                        <p tabindex="33" class="footer__center-text black">Ноутбуки</p>
-                        <p tabindex="34" class="footer__center-text black">Ювелирные изделия</p>
-                        <p tabindex="35" class="footer__center-text black">Одежда</p>
-                        <p tabindex="36" class="footer__center-text black">Бытовая техника</p>
-                    </div>
-                    <div class="footer__center-three">
-                        <p tabindex="37" class="footer__center-text black">Бытовая химия</p>
-                        <p tabindex="38" class="footer__center-text black">Книги и журналы</p>
-                        <p tabindex="39" class="footer__center-text black">Домашний текстиль</p>
-                        <p tabindex="40" class="footer__center-text black">Электроника</p>
-                        <p tabindex="41" class="footer__center-text black">Косметика</p>
-                    </div>
-                    <div class="footer__center-four">
-                        <p tabindex="42" class="footer__center-text black">Оплата заказа</p>
-                        <p tabindex="43" class="footer__center-text black">Условия доставки</p>
-                        <p tabindex="44" class="footer__center-text black">Условия возврата заказа</p>
-                        <p tabindex="45" class="footer__center-text black">Блог</p>
-                    </div>
-                    <div class="footer__center-five">
-                        <p class="footer__center-text black">Контакты</p>
-                    </div>
+                <div class="footer__center-three">
+                    <a tabindex="37" class="footer__center-text black">Бытовая химия</a>
+                    <a tabindex="38" class="footer__center-text black">Книги и журналы</a>
+                    <a tabindex="39" class="footer__center-text black">Домашний текстиль</a>
+                    <a href="goods.html" tabindex="40" class="footer__center-text black">Электроника</a>
+                    <a tabindex="41" class="footer__center-text black">Косметика</a>
+                </div>
+                <div class="footer__center-four">
+                    <a tabindex="42" class="footer__center-text black">Оплата заказа</a>
+                    <a tabindex="43" class="footer__center-text black">Условия доставки</a>
+                    <a tabindex="44" class="footer__center-text black">Условия возврата заказа</a>
+                    <a tabindex="45" class="footer__center-text black">Блог</a>
+                </div>
+                <div class="footer__center-five">
+                    <p class="footer__center-text black">Контакты</p>
                 </div>
             </div>
+        </div>
         <form action="https://jsonplaceholder.typicode.com/posts" method="post" class="header__form">
             <label for="search">
                 <input tabindex="3" class="header__search" aria-label="Поисковая строка магазина" placeholder="Я ищу..." id="search" type="text">
@@ -61,22 +61,22 @@
         </form>
         <ul class="header-list">
             <li class="header-list__item">
-                <button tabindex="5" aria-label="Вход в ваш профиль" href="#" class="header-list__link"><svg width="24" height="24" viewbox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <a tabindex="5" aria-label="Вход в ваш профиль" href="blog.html" class="header-list__link"><svg width="24" height="24" viewbox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 12C15.315 12 18 9.315 18 6C18 2.685 15.315 0 12 0C8.685 0 6 2.685 6 6C6 9.315 8.685 12 12 12ZM12 15C7.995 15 0 17.01 0 21V24H24V21C24 17.01 16.005 15 12 15Z"/></svg>
-                    <p class="header-list__text">Профиль</p></button></li>
+                    <p class="header-list__text">Профиль</p></a></li>
             <li class="header-list__item">
-                <button tabindex="6" aria-label="Вход в вашу корзину" href="#" class="header-list__link"><svg width="36" height="36" viewbox="0 0 36 36" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <a tabindex="6" aria-label="Вход в вашу корзину" href="shop.html" class="header-list__link"><svg width="36" height="36" viewbox="0 0 36 36" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_2150_25)">
                         <path d="M10.5 27C8.85 27 7.515 28.35 7.515 30C7.515 31.65 8.85 33 10.5 33C12.15 33 13.5 31.65 13.5 30C13.5 28.35 12.15 27 10.5 27ZM1.5 3V6H4.5L9.9 17.385L7.875 21.06C7.635 21.48 7.5 21.975 7.5 22.5C7.5 24.15 8.85 25.5 10.5 25.5H28.5V22.5H11.13C10.92 22.5 10.755 22.335 10.755 22.125L10.8 21.945L12.15 19.5H23.325C24.45 19.5 25.44 18.885 25.95 17.955L31.32 8.22C31.44 8.01 31.5 7.755 31.5 7.5C31.5 6.675 30.825 6 30 6H7.815L6.405 3H1.5ZM25.5 27C23.85 27 22.515 28.35 22.515 30C22.515 31.65 23.85 33 25.5 33C27.15 33 28.5 31.65 28.5 30C28.5 28.35 27.15 27 25.5 27Z"/>
                         <circle cx="29" cy="7" r="7" fill="white"/>
                         <path d="M31.867 10.39C32.0537 10.39 32.2007 10.4437 32.308 10.551C32.42 10.6537 32.476 10.7913 32.476 10.964V12H25.532V11.426C25.532 11.3093 25.5553 11.188 25.602 11.062C25.6533 10.9313 25.7327 10.8147 25.84 10.712L28.913 7.632C29.1697 7.37067 29.3983 7.121 29.599 6.883C29.8043 6.645 29.9747 6.40933 30.11 6.176C30.2453 5.94267 30.348 5.707 30.418 5.469C30.4927 5.22633 30.53 4.972 30.53 4.706C30.53 4.46333 30.495 4.251 30.425 4.069C30.355 3.88233 30.2547 3.726 30.124 3.6C29.998 3.474 29.844 3.38067 29.662 3.32C29.4847 3.25467 29.284 3.222 29.06 3.222C28.8547 3.222 28.6633 3.25233 28.486 3.313C28.3133 3.369 28.1593 3.45067 28.024 3.558C27.8887 3.66067 27.7743 3.782 27.681 3.922C27.5877 4.062 27.5177 4.216 27.471 4.384C27.3917 4.59867 27.289 4.741 27.163 4.811C27.037 4.881 26.855 4.89733 26.617 4.86L25.707 4.699C25.777 4.21367 25.9123 3.789 26.113 3.425C26.3137 3.05633 26.5633 2.75067 26.862 2.508C27.1653 2.26067 27.5107 2.07633 27.898 1.955C28.29 1.829 28.71 1.766 29.158 1.766C29.6247 1.766 30.0517 1.836 30.439 1.976C30.8263 2.11133 31.1577 2.305 31.433 2.557C31.7083 2.809 31.923 3.11233 32.077 3.467C32.231 3.82167 32.308 4.216 32.308 4.65C32.308 5.02333 32.252 5.36867 32.14 5.686C32.0327 6.00333 31.8857 6.30667 31.699 6.596C31.517 6.88533 31.3023 7.16533 31.055 7.436C30.8077 7.70667 30.5487 7.982 30.278 8.262L27.996 10.593C28.2153 10.5277 28.4323 10.4787 28.647 10.446C28.8663 10.4087 29.074 10.39 29.27 10.39H31.867Z" fill="#3670C7"/>
                     </g>
                 </svg>
-                    <p class="header-list__text">Корзина</p></button></li>
+                    <p class="header-list__text">Корзина</p></a></li>
             <li class="header-list__item">
-                <button tabindex="7" aria-label="Вход в ваше избранное" href="#" class="header-list__link"><svg width="30" height="29" viewbox="0 0 30 29" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <a tabindex="7" aria-label="Вход в ваше избранное" href="#" class="header-list__link"><svg width="30" height="29" viewbox="0 0 30 29" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path d="M15 28.025L12.825 26.045C5.1 19.04 0 14.42 0 8.75C0 4.13 3.63 0.5 8.25 0.5C10.86 0.5 13.365 1.715 15 3.635C16.635 1.715 19.14 0.5 21.75 0.5C26.37 0.5 30 4.13 30 8.75C30 14.42 24.9 19.04 17.175 26.06L15 28.025Z"/></svg>
-                    <p class="header-list__text">Избранное</p></button></li>
+                    <p class="header-list__text">Избранное</p></a></li>
         </ul>
     </header>
     <div class="zagolovok">
@@ -86,66 +86,58 @@
             <path d="M6.44238 12.4425L9.87738 9L6.44238 5.5575L7.49988 4.5L11.9999 9L7.49988 13.5L6.44238 12.4425Z" fill="#525252"/>
             </g>
         </svg>
-        <p class="blog">Каталог</p>
-        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_1753_749)">
-            <path d="M6.44238 12.4425L9.87738 9L6.44238 5.5575L7.49988 4.5L11.9999 9L7.49988 13.5L6.44238 12.4425Z" fill="#525252"/>
-            </g>
-        </svg>
-        <p class="blog">Ноутбуки</p>
-        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_1753_749)">
-            <path d="M6.44238 12.4425L9.87738 9L6.44238 5.5575L7.49988 4.5L11.9999 9L7.49988 13.5L6.44238 12.4425Z" fill="#525252"/>
-            </g>
-        </svg>
-        <p class="blog">ASUS</p>
-    </div>
+        <p class="blog">Корзина</p>
+    </div>    
     <main class="main">
-        <div class="main__append">
-            <p class="main-title">15.6" Игровой ноутбук ASUS G513IE-HN004T</p>
-            <div class="main-content">
-                    <img class="main-content-photo" src="picture/photo.jpg" alt="ноутбук">
-                <div class="main-content-card">
-                    <div class="main-content-card-one">
-                    <p class="main-content-card-one-text-red">109 090 ₽</p>
-                    <p class="main-content-card-one-text">140 590 ₽</p>
-                    <p class="main-content-card-one-text-blue">В кредит от 5600 ₽</p>
+        <section class="basket">
+            <div class="basketanddelivery">
+                <div class="basket__card">
+                    <div><p class="basket__card_delivery-text-blackBig" data-count="10">Корзина</p></div>
+                    <div class="basket__card_checkboxFlex"><label class="basket__card_checkboxText" id="one"><input name="one" class="basket__card_checkbox" type="checkbox" id="selectAll">Выбрать всё</label><button class="basket__card_delete"></button></div>
+                    <table class="table">
+                        <tbody class="tbody">
+                        </tbody>
+                    </table>
                 </div>
-                    <div class="main-content-card-two">
-                        <button class="main-content-card-two-button">Добавить в корзину</button>
-                        <button><img class="main-content-card-two-img" src="picture/favorite_border.png" alt="bell"></button>
-                    </div>
-                    <div class="main-content-card-three">
-                        <div>
-                            <p class="main-content-card-three-gray">Доставка</p>
-                            <p>1-3 января</p>
-                        </div>
-                        <div>
-                            <p class="main-content-card-three-gray">Продавец</p>
-                            <p>ShopOnline</p>
-                        </div>
-                    </div>
-                    <div class="main-content-card-four">
-                        <img class="main-content-card-bell" src="picture/bx_bx-bell.png" alt="bell">
-                        <p class="main-content-card-bell-text">Узнать о снижении цены</p>
-                    </div>
+                <div class="basket__card">
+                    <div class="basket__card_delivery"><p class="basket__card_delivery-text-blackBig">Способ доставки</p><button class="basket__card_delivery-text-blue">изменить</button></div>
+                    <div class="basket__card_delivery-grid">
+                        <p class="basket__card_delivery-text-gray">Пункт выдачи</p>
+                        <p class="basket__card_delivery-text">г. Москва (Московская область), улица Павлика Морозова, д. 48</p>
+                        <p class="basket__card_delivery-text-gray">Стоимость доставки</p>
+                        <p class="basket__card_delivery-text">Бесплатно</p></div>
+                    <div class="basket__card_delivery-grid"><p class="basket__card_delivery-text-black">10-13 февраля</p>
+                        <p class="basket__card_delivery-photo"></p></div>
                 </div>
             </div>
-        </div>
-        <div class="description">
-            <p class="description-text-title">Описание:</p>
-            <p class="description-text">ROG Strix G15/17 – это игровая платформа для массового
-                пользователя, работающая на базе операционной системы Windows 10 Pro.
-                Благодаря мощной конфигурации, которая может включать в себя процессор
-                AMD Ryzen 9 5900HX и видеокарту GeForce RTX 3070, этот ноутбук подходит
-                для широкого спектра задач. Его дисплей доступен в двух вариантах: с
-                киберспортивного уровня частотой обновления в 300 Гц или с высоким
-                разрешением WQHD. Оба варианта обладают низким временем отклика (3 мс)
-                и поддерживают адаптивную синхронизацию Adaptive-Sync. Оптимизированная
-                система охлаждения гарантирует стабильную работу устройства под тяжелыми
-                нагрузками, поэтому ROG Strix G15/17 позволит вам проявить все свое
-                мастерство в любой игровой ситуации!</p>
-        </div>
+            <div class="basket__card">
+                <div class="basket__card_item"><p class="basket__card_item-text-black">Итого:</p><p class="basket__card_item-text-black sum">$0</p></div>
+                <div class="basket__card_item">
+                    <p class="basket__card_item-text-gray">Товары, <span class="basket__card_item-text-gray basket__card_item-text-gray-count">10</span> шт.</p>
+                        <p class="basket__card_text"></p>
+                    </div>
+                <div class="basket__card_item"><p class="basket__card_item-text-gray">Скидка</p><p class="basket__card_item-text-gray basket__card_item-text-gray-discount"></p></div>
+                <div class="basket__card_item"><p class="basket__card_item-text-gray">Доставка</p><p class="basket__card_item-text-gray">Бесплатно</p></div>
+                <div>
+                    <p class="basket__card_item-text-normal">Доставка: <span>Пункт выдачи</span></p>
+                    <p class="basket__card_item-text-gray">Ежедневно 10:00 - 21:00</p>
+                    <p class="basket__card_item-text-gray">г. Москва (Московская область), улица Павлика Морозова, д. 48</p>
+                </div>
+                <div>
+                    <p class="basket__card_item-text-normal">Дата: <span>10-13 февраля</span></p>
+                </div>
+                <div>
+                    <p class="basket__card_item-text-normal">Оплата: <span>Картой</span></p>    
+                </div>
+                <div class="basket__card_button-center">
+                <button class="basket__card_button">Заказать</button>
+                </div>
+                <div class="basket__card_checkbox">
+                <input class="basket__card_button-checkbox" type="checkbox">
+                <a class="basket__card_checkbox-text" href="#"><span> Согласен с условиями</span> правил пользования торговой площадкой и правилами возврата</a>
+                </div>
+            </div>
+        </section>
         <section class="profitable">
                 <h3 class="profitable-h3">Это выгодно!</h3>
                 <h3 class="visually-hidden">Рекламный баннер с выгодными акциями</h3>

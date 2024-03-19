@@ -51,7 +51,7 @@
         &_delete {
             width: 30px;
             height: 30px;
-            background-image: url('../picture/delete.png');
+            background-image: url('../../picture/delete.png');
 
             @media (max-width: 768px) {
                 display: none;
@@ -200,7 +200,7 @@
         display: none;
         width: 30px;
         height: 30px;
-        background-image: url('../picture/delete.png');
+        background-image: url('../../picture/delete.png');
 
         @media (max-width: 768px) {
             display: block;
@@ -293,13 +293,13 @@
     &-amount-minus {
         width: 36px;
         height: 36px;
-        background-image: url(../picture/minus.png);
+        background-image: url(../../picture/minus.png);
     }
 
     &-amount-plus {
         width: 36px;
         height: 36px;
-        background-image: url(../picture/plus.png);
+        background-image: url(../../picture/plus.png);
     }
 }
 

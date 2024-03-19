@@ -342,13 +342,13 @@ iframe {
   top: 120px;
 }
 .header__menu_svg {
-  background: url(/picture/burger.png) center no-repeat;
+  background: url(../../picture/burger.png) center no-repeat;
   background-size: cover;
   width: 24px;
   height: 24px;
 }
 .header__menu_svg-close {
-  background: url(../picture/close-burger.png) center no-repeat;
+  background: url(../../picture/close-burger.png) center no-repeat;
   background-size: cover;
   width: 24px;
   height: 24px;
@@ -692,7 +692,7 @@ iframe {
 }
 .grid-item__two {
   position: relative;
-  background: linear-gradient(181.33deg, rgba(0, 0, 0, 0) 9.23%, rgba(0, 0, 0, 0.2) 98.87%), url(../picture/two.png) center no-repeat;
+  background: linear-gradient(181.33deg, rgba(0, 0, 0, 0) 9.23%, rgba(0, 0, 0, 0.2) 98.87%), url(../../picture/two.png) center no-repeat;
   background-size: cover;
   width: 100%;
   height: 295px;
@@ -713,7 +713,7 @@ iframe {
 }
 .grid-item__three {
   position: relative;
-  background: linear-gradient(179.81deg, rgba(7, 7, 7, 0) 30.77%, rgba(0, 0, 0, 0.2) 99.83%), url(../picture/three.png) center no-repeat;
+  background: linear-gradient(179.81deg, rgba(7, 7, 7, 0) 30.77%, rgba(0, 0, 0, 0.2) 99.83%), url(../../picture/three.png) center no-repeat;
   background-size: cover;
   width: 100%;
   height: 295px;
@@ -734,7 +734,7 @@ iframe {
 }
 .grid-item__four {
   position: relative;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 25.39%, rgba(0, 0, 0, 0.16) 100%), url(../picture/four.png) center no-repeat;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 25.39%, rgba(0, 0, 0, 0.16) 100%), url(../../picture/four.png) center no-repeat;
   background-size: cover;
   width: 100%;
   height: 295px;
@@ -755,7 +755,7 @@ iframe {
 }
 .grid-item__five {
   position: relative;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 7.46%, rgba(0, 0, 0, 0.2) 100%), url(../picture/five.png) center no-repeat;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 7.46%, rgba(0, 0, 0, 0.2) 100%), url(../../picture/five.png) center no-repeat;
   background-size: cover;
   width: 100%;
   height: 295px;
@@ -776,7 +776,7 @@ iframe {
 }
 .grid-item__six {
   position: relative;
-  background: linear-gradient(180.99deg, rgba(0, 0, 0, 0) 8.18%, rgba(0, 0, 0, 0.2) 99.15%), url(../picture/six.jpg) center no-repeat;
+  background: linear-gradient(180.99deg, rgba(0, 0, 0, 0) 8.18%, rgba(0, 0, 0, 0.2) 99.15%), url(../../picture/six.jpg) center no-repeat;
   background-size: cover;
   width: 100%;
   height: 295px;
@@ -797,7 +797,7 @@ iframe {
 }
 .grid-item__seven {
   position: relative;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 12.28%, rgba(0, 0, 0, 0.2) 100%), url(../picture/seven.jpg) center no-repeat;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 12.28%, rgba(0, 0, 0, 0.2) 100%), url(../../picture/seven.jpg) center no-repeat;
   background-size: cover;
   width: 100%;
   height: 295px;
@@ -818,7 +818,7 @@ iframe {
 }
 .grid-item__eight {
   position: relative;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 25.39%, rgba(0, 0, 0, 0.16) 100%), url(../picture/eight.png) center no-repeat;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 25.39%, rgba(0, 0, 0, 0.16) 100%), url(../../picture/eight.png) center no-repeat;
   background-size: cover;
   width: 100%;
   height: 295px;
@@ -839,7 +839,7 @@ iframe {
 }
 .grid-item__nine {
   position: relative;
-  background: linear-gradient(179.81deg, rgba(7, 7, 7, 0) 30.77%, rgba(0, 0, 0, 0.2) 99.83%), url(../picture/nine.jpg) center no-repeat;
+  background: linear-gradient(179.81deg, rgba(7, 7, 7, 0) 30.77%, rgba(0, 0, 0, 0.2) 99.83%), url(../../picture/nine.jpg) center no-repeat;
   background-size: cover;
   width: 100%;
   height: 295px;
@@ -1104,6 +1104,7 @@ iframe {
   }
 }
 .footer__center-text {
+  display: block;
   white-space: pre-line;
   font-family: Lato;
   font-size: 22px;
@@ -1188,7 +1189,7 @@ iframe {
 .basket__card_delete {
   width: 30px;
   height: 30px;
-  background-image: url("../picture/delete.png");
+  background-image: url("../../picture/delete.png");
 }
 @media (max-width: 768px) {
   .basket__card_delete {
@@ -1310,7 +1311,7 @@ iframe {
   display: none;
   width: 30px;
   height: 30px;
-  background-image: url("../picture/delete.png");
+  background-image: url("../../picture/delete.png");
 }
 @media (max-width: 768px) {
   .td-body-button {
@@ -1395,12 +1396,12 @@ iframe {
 .td-body-amount-minus {
   width: 36px;
   height: 36px;
-  background-image: url(../picture/minus.png);
+  background-image: url(../../picture/minus.png);
 }
 .td-body-amount-plus {
   width: 36px;
   height: 36px;
-  background-image: url(../picture/plus.png);
+  background-image: url(../../picture/plus.png);
 }
 
 .order {
