@@ -1,0 +1,16 @@
+$color-black: #000000;
+$color-white: #ffffff;
+$color-button: #3670C7;
+$color-footer: #2D2D2D;
+$color-search-bg: #EFEFEF;
+$color-search-text: #8F8F8F;
+$color-profitable-text: #2D2D2D;
+
+@mixin font($name, $weight) {
+    font: {
+        family: $name;
+        weight: $weight;
+        display: swap;
+    }
+    src: url("../fonts/#{$name}-#{$weight}.ttf") format('ttf');
+}
