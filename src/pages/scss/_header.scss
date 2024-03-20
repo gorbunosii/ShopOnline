@@ -1,9 +1,7 @@
 .header {
     max-width: 1770px;
-    padding: 30px 70px;
-    margin: 0 auto;
     display: grid;
-    justify-content: space-between;
+    -webkit-justify-content: space-between;
     grid-template-columns: 190px 151px minmax(280px, 757px) minmax(200px, 354px);
     gap: 20px;
     @media (max-width: 1200px) {
@@ -65,11 +63,27 @@
         gap: 10px;
 
         &-list {
-                z-index: 1;
                 display: none;
+                width: 100%;
                 position: absolute;
                 background: $color-white;
-                top: 120px;
+                top: 118px;
+                z-index: 5;
+                left: 0;
+
+                &-center {
+                        max-width: 1770px;
+                        padding: 0 70px;
+                        margin: 0 auto;
+                }
+
+                @media (max-width: 768px) {
+                        top: 190px;
+                        padding: 0 20px;
+                }
+                @media (max-width: 320px) {
+                        padding: 0 20px;
+                }
         }
 
         &_svg {

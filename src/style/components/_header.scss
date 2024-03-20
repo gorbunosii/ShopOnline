@@ -63,9 +63,25 @@
 
         &-list {
                 display: none;
+                width: 100%;
                 position: absolute;
                 background: $color-white;
                 top: 120px;
+                left: 0;
+
+                &-center {
+                        max-width: 1770px;
+                        padding: 0 70px;
+                        margin: 0 auto;
+                }
+
+                @media (max-width: 768px) {
+                        top: 190px;
+                        padding: 0 20px;
+                }
+                @media (max-width: 320px) {
+                        padding: 0 20px;
+                }
         }
 
         &_svg {

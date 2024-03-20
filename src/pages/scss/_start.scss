@@ -1,9 +1,15 @@
+html {
+    position: relative;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    font-family: Lato;
-    font-weight: 400;
     min-width: 320px;
     min-height: 100vh;
     margin: 0 auto;

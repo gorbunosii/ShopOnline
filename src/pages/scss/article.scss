@@ -7,6 +7,8 @@
 @import "footer";
 
 .main {
+    max-width: 1770px;
+    margin: 0 auto;
     margin-bottom: 150px;
     padding: 0 70px;
 
@@ -44,19 +46,28 @@
         text-align: left;
         margin-bottom: 70px;
         }
-}
 
-.container-autor {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 10px;
-}
+    &__road {
+        display: flex;
+        margin-bottom: 50px;
+        gap: 20px;
+    }
 
-.zagolovok {
-    padding: 0 70px;
-    display: flex;
-    margin-bottom: 50px;
-    gap: 20px;
+    &-container-autor {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10px;
+
+        &-p {
+            line-height: 24px;
+            font-family: Lato;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 21px;
+            letter-spacing: 0em;
+            text-align: left;
+        }
+    }
 }
 
 .button-left {
@@ -64,20 +75,9 @@
     border: none;
 }
 
-.p {
-    line-height: 24px;
-    font-family: Lato;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 21px;
-    letter-spacing: 0em;
-    text-align: left;
-}
-
-
 .blok-img {
     max-width: 532px;
-flex-direction: column;
-display: flex;
-gap: 15px;
+    flex-direction: column;
+    display: flex;
+    gap: 15px;
 }

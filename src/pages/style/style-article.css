@@ -212,12 +212,18 @@ template {
   box-sizing: inherit;
 }
 
+html {
+  position: relative;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  font-family: Lato;
-  font-weight: 400;
   min-width: 320px;
   min-height: 100vh;
   margin: 0 auto;
@@ -262,10 +268,8 @@ iframe {
 
 .header {
   max-width: 1770px;
-  padding: 30px 70px;
-  margin: 0 auto;
   display: grid;
-  justify-content: space-between;
+  -webkit-justify-content: space-between;
   grid-template-columns: 190px 151px minmax(280px, 757px) minmax(200px, 354px);
   gap: 20px;
 }
@@ -335,11 +339,29 @@ iframe {
   gap: 10px;
 }
 .header__menu-list {
-  z-index: 1;
   display: none;
+  width: 100%;
   position: absolute;
   background: #ffffff;
-  top: 120px;
+  top: 118px;
+  z-index: 5;
+  left: 0;
+}
+.header__menu-list-center {
+  max-width: 1770px;
+  padding: 0 70px;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .header__menu-list {
+    top: 190px;
+    padding: 0 20px;
+  }
+}
+@media (max-width: 320px) {
+  .header__menu-list {
+    padding: 0 20px;
+  }
 }
 .header__menu_svg {
   background: url(../../picture/burger.png) center no-repeat;
@@ -715,6 +737,8 @@ iframe {
 }
 
 .main {
+  max-width: 1770px;
+  margin: 0 auto;
   margin-bottom: 150px;
   padding: 0 70px;
 }
@@ -749,26 +773,17 @@ iframe {
   text-align: left;
   margin-bottom: 70px;
 }
-
-.container-autor {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 10px;
-}
-
-.zagolovok {
-  padding: 0 70px;
+.main__road {
   display: flex;
   margin-bottom: 50px;
   gap: 20px;
 }
-
-.button-left {
+.main-container-autor {
   display: flex;
-  border: none;
+  justify-content: space-between;
+  padding: 0 10px;
 }
-
-.p {
+.main-container-autor-p {
   line-height: 24px;
   font-family: Lato;
   font-size: 16px;
@@ -776,6 +791,11 @@ iframe {
   line-height: 21px;
   letter-spacing: 0em;
   text-align: left;
+}
+
+.button-left {
+  display: flex;
+  border: none;
 }
 
 .blok-img {

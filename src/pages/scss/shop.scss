@@ -9,6 +9,27 @@
 
 .main {
     padding: 0 70px;
+
+    &__road {
+        display: flex;
+        gap: 20px;
+    }
+
+    &-container-autor {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10px;
+
+        &-p {
+            line-height: 24px;
+            font-family: Lato;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 21px;
+            letter-spacing: 0em;
+            text-align: left;
+        }
+    }
  }
 
 .basket {
@@ -316,18 +337,8 @@ margin-bottom: 10px;
 }
 }
 
-.zagolovok {
+.container-mini {
+    max-width: 1770px;
+    margin: 0 auto;
     padding: 0 70px;
-    display: flex;
-    margin-bottom: 50px;
-    gap: 20px;
-
-    @media (max-width: 1024px) {
-        padding: 0 40px;
-        gap: 15px;
-    }
-    @media (max-width: 320px) {
-        padding: 0 20px;
-        gap: 10px;
-    }
 }

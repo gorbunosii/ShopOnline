@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const params = new URLSearchParams(window.location.search);
 
 
@@ -15,12 +16,12 @@ const renderGoods = (data) => {
   mainContent.append(data.data[0].body);
   mainTitle.append(data.data[0].title);
   story.append(data.data[0].title);
-  const container = document.querySelector(`.container-autor`);
+  const container = document.querySelector(`.main-container-autor`);
   const userId = data.data[0].user_id;
   const user = async (ID) => {
-    const result = await fetch(`https://gorest.co.in/public-api/users/${ID}`);
+    const result = await fetch(`https://gorest.co.in/public/v2/users/6792977`);
     const data = await result.json();
-    container.append(data);
+    container.append(data.name);
   };
   user(userId);
 };
@@ -43,5 +44,10 @@ const server = async () => {
   const countData = document.querySelector('.header-list__link-backet');
   countData.dataset.count = data.goods.length;
 };
+
+const back = document.querySelector('.button-left');
+back.addEventListener(`click`, () => {
+  history.back();
+});
 
 server();

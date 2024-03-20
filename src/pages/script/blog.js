@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const params = new URLSearchParams(window.location.search);
 params.append(`page`, `1`);
 
