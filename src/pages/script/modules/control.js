@@ -1,3 +1,9 @@
+/* eslint-disable no-undef */
+/* eslint-disable max-len */
+import serviceStorage from './serviceStorage.js';
+const {data, setTableStorage, removeStorage} = serviceStorage;
+import {createGoods} from './createElements.js';
+
 export const sumAll = number => {
   const sumModal = document.querySelector(`.sum`);
   const price = Array.from(document.querySelectorAll(`.td-body-priceNew`));
@@ -35,7 +41,10 @@ export const sumAll = number => {
 export const controlDelete = btn => {
   btn.addEventListener('click', () => {
     const items = document.querySelectorAll('.td-body-input:checked');
-    items.forEach(item => item.closest('.order').remove());
+    items.forEach(item => {
+      item.closest('.order').remove();
+      removeStorage(item.closest('.order').children[2].children[0].textContent);
+    });
     sumAll();
   });
 };
@@ -51,6 +60,17 @@ export const thisChecked = btn => {
       });
     });
     items.forEach(item => item.checked = btn.checked);
+    sumAll();
+  });
+};
+
+export const controlBtnAdd = btn => {
+  btn.addEventListener('click', async () => {
+    const params = new URLSearchParams(window.location.search);
+    const result = await fetch(`https://lydian-romantic-litter.glitch.me/api/goods/${params.get(`id`)}`);
+    const resultData = await result.json();
+    setTableStorage(resultData);
+    createGoods(data);
     sumAll();
   });
 };

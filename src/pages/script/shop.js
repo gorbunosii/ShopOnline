@@ -6,8 +6,6 @@ const {fetchRequest} = modulStorage;
 const init = () => {
   const {
     btnDel,
-    tableTbody,
-    sumModal,
     idCheckbox,
     URL,
   } = renderCRM();

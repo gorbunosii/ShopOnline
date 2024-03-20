@@ -1,21 +1,6 @@
 import {renderCRM, sumContacts, sumOld} from './render.js';
-
-let data = JSON.parse(localStorage.getItem('users')) || [];
-
-const setTableStorage = (contact) => {
-  data = JSON.parse(localStorage.getItem(`users`)) || [];
-  data.push(contact);
-  localStorage.setItem(`users`, JSON.stringify(data));
-};
-
-const removeStorage = (name) => {
-  for (let i = data.length; i--;) {
-    if (data[i].name === name) {
-      data.splice(i, 1);
-    }
-  }
-  localStorage.setItem(`users`, JSON.stringify(data));
-};
+import serviceStorage from './serviceStorage.js';
+const {localData} = serviceStorage;
 
 const fetchRequest = async (url, {
   method = `GET`,
@@ -44,7 +29,7 @@ const fetchRequest = async (url, {
         tableTbody,
       } = renderCRM();
 
-      if (callback) return callback(null, tableTbody, data);
+      if (callback) return callback(null, tableTbody, data, localData);
       return;
     }
 
@@ -56,6 +41,4 @@ const fetchRequest = async (url, {
 
 export default {
   fetchRequest,
-  setTableStorage,
-  removeStorage,
 };

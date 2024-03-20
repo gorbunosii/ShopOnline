@@ -1,8 +1,9 @@
+/* eslint-disable max-len */
 import createElem from './createElements.js';
 const {createRow, createGoods} = createElem;
 
 export const renderCRM = () => {
-//   const btnAdd = document.querySelector(`.table-add`);
+  const btnAdd = document.querySelector(`.main-content-card-two-button`);
   const btnDel = document.querySelector(`.basket__card_delete`);
   const tableTbody = document.querySelector(`.tbody`);
   const sumModal = document.querySelector(`.sum`);
@@ -12,6 +13,7 @@ export const renderCRM = () => {
 
 
   return {
+    btnAdd,
     btnDel,
     tableTbody,
     sumModal,
@@ -20,18 +22,19 @@ export const renderCRM = () => {
   };
 };
 
-export const renderContacts = (x, tableTbody, data) => {
+export const renderContacts = (x, tableTbody, data, localData) => {
   if (x) {
     console.warn(x, data);
     console.log(`Что-то пошло не так...`);
   }
   const alllRow = data.goods.map(createRow);
-  tableTbody.append(...alllRow);
+  const localRow = localData.map(createRow);
+  tableTbody.append(...alllRow, ...localRow);
 
   return `Успех`;
 };
 
-export const renderGoods = (x, tableTbody, data) => {
+export const renderGoods = (x, tableTbody, data, localData) => {
   if (x) {
     console.warn(x, data);
     console.log(`Что-то пошло не так...`);

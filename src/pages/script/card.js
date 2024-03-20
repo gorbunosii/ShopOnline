@@ -1,5 +1,17 @@
-const params = new URLSearchParams(window.location.search);
+import {controlBtnAdd} from './modules/control.js';
+import {renderCRM} from './modules/render.js';
 
+const init = () => {
+  const {
+    btnAdd,
+  } = renderCRM();
+
+  controlBtnAdd(btnAdd);
+};
+
+init();
+
+const params = new URLSearchParams(window.location.search);
 
 const loadGoods = async (cb) => {
   const result = await fetch(`https://lydian-romantic-litter.glitch.me/api/goods/${params.get(`id`)}`);
@@ -9,7 +21,6 @@ const loadGoods = async (cb) => {
 
 
 const renderGoods = (data) => {
-  console.log(data);
   const mainTitle = document.querySelector(`.main-title`);
   const priceRed = document.querySelector(`.main-content-card-one-text-red`);
   const priceBlack = document.querySelector(`.main-content-card-one-text`);
